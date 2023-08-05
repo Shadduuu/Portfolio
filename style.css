@@ -1,5 +1,6 @@
 html{
     transition:smooth 0.5s;
+    scroll-behavior: smooth;
 }
 /* Global Styles */
 body {
@@ -94,20 +95,6 @@ h4.web {
     
 }
 
-h4.web::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 1px;
-    background-color: #ff0505;
-    transition: width 0.3s ease;
-    transform: translateX(-50%);
-}
-h4.web:hover::after {
-    width: 100%;
-}
 p {
     font-family: century;
 }
@@ -128,6 +115,22 @@ section .content p {
     line-height: 1.6;
     color: #000000;
 }
+.btn {
+    background-color: #ff7777;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 85, 55);
+    color: rgb(255, 255, 255);
+    
+}
+
 section .image {
     width: 50%;
     display: flex;
